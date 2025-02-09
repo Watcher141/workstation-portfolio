@@ -1,0 +1,74 @@
+/* src/components/Hero.css */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--section-bg-color);
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-subtitle .highlight {
+  display: inline-block;
+  perspective: 1000px;
+  min-width: 100px; /* Ensures smooth transition between words */
+  text-align: center;
+}
+
+.rotating-box {
+  display: inline-block;
+  transform-origin: center;
+  font-weight: bold;
+  color: var(--accent-color);
+  padding: 5px 10px;
+  background-color: (--section-bg-color);
+  transform-style: preserve-3d;
+}
+
+.cursor {
+  display: inline-block;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-left: 2px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: var(--text-color);
+  color: var(--accent-color);
+}

@@ -1,0 +1,65 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  background-color: var(--nav-bg-color);
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between; /* Ensures logo is on the left and nav-actions are on the right */
+  align-items: center;
+  max-width: 1200px; /* Keeps navbar content centered within the screen */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 2rem; /* Adds spacing on both sides */
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar .nav-links li a {
+  font-size: 1rem;
+  color: var(--text-color);
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: var(--accent-color);
+}
+
+.navbar .nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Adds spacing between nav links and toggle button */
+}
+
+.mode-toggle {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mode-toggle:hover {
+  background-color: var(--text-color);
+  color: var(--accent-color);
+}

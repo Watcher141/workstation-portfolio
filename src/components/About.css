@@ -1,0 +1,17 @@
+/* src/components/About.css */
+
+.about {
+    padding: 5rem 0;
+    background-color: var(--section-bg-color);
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }

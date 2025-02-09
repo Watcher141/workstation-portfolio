@@ -1,0 +1,64 @@
+/* src/index.css */
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+
+  /* Default dark mode */
+  --bg-color: #121212; /* Background color */
+  --text-color: #ffffff; /* Text color */
+  --accent-color: #64ffda; /* Accent color */
+  --nav-bg-color: #1e1e1e; /* Navbar background color */
+  --section-bg-color: #1e1e1e; /* Section background color */
+}
+
+body.light-mode {
+  /* Light mode */
+  --bg-color: #c1c790; /* Background color */
+  --text-color: #121212; /* Text color */
+  --accent-color: #78c23c; /* Accent color */
+  --nav-bg-color: #c1c790; /* Navbar background color */
+  --section-bg-color: #c1c790; /* Section background color */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--text-color);
+  color: var(--accent-color);
+}
