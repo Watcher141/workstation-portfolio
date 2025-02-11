@@ -31,7 +31,7 @@ const Hero = () => {
     }, 3000); // Word stays visible for 3 seconds
     return () => clearInterval(interval);
   }, []);
-
+  
   return (
     <section id="home" className="hero">
 
